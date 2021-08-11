@@ -1,7 +1,6 @@
 import React from "react";
 import Movie from "./movie";
 import axios from "axios";
-import "./App.css";
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -47,7 +46,6 @@ class App extends React.Component {
                   title={movie.title}
                   summary={movie.summary}
                   poster={movie.medium_cover_image}
-                  genre={movie.genres}
                 />
               );
             })}
